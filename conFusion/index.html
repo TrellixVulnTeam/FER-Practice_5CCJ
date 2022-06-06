@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link href="css/styles.css" rel="stylesheet">
-    
+
 
 </head>
 
@@ -39,7 +39,7 @@
                             Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="login" >
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
 
@@ -103,7 +103,7 @@
                         <!-- <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip"
                             data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>"
                             data-placement="bottom" href="#reserveform">Reserve Table</a> -->
-                        <a data-toggle="modal" data-target="#reserveTable">
+                        <a id="reserveButton">
                             <span class="text-white">Reserve Table</span> </a>
 
                     </button>
@@ -113,7 +113,7 @@
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title text-dark">Reserve Table </h4>
+                                <h4 class="modal-title">Reserve Table </h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
@@ -159,12 +159,14 @@
                                         <label for="telnum" class="col-12 col-md-2 col-form-label">Section</label>
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                             <label class="btn btn-secondary active btn btn-success">
-                                              <input  type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                                <input type="radio" name="options" id="option1" autocomplete="off"
+                                                    checked> Non-Smoking
                                             </label>
                                             <label class="btn btn-secondary btn btn-danger">
-                                              <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                                <input type="radio" name="options" id="option2" autocomplete="off">
+                                                Smoking
                                             </label>
-                                          </div>
+                                        </div>
                                     </div>
 
                                     <div class="form-row">
@@ -269,7 +271,7 @@
                     </div>
                 </div>
 
-                
+
 
 
                 <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
@@ -466,22 +468,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
-            $("#carousel-pause").click(function(){
-                $("#mycarousel").carousel('pause');
-            });
-            $("#carousel-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
-        });
-</script>
+    <script src="js/scripts.js"></script>
 
 
 </body>
