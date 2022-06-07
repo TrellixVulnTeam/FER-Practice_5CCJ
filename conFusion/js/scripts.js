@@ -16,15 +16,14 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#login" ).click(function() {
         $("#login").attr("data-toggle", "modal");
-        $("#login").attr("data-target", "#loginModal");
-        
+        $("#login").attr("data-target", "#loginModal");     
       });
 });
 
 $(document).ready(function () {
     $("#reserveButton" ).click(function() {
-        $("#reserveButton").attr("data-toggle", "modal");
-        $("#reserveButton").attr("data-target", "#reserveTable");
-        
+        $("#reserveButton").attr({"data-toggle": "modal","data-target": "#reserveTable"});
+        // $("#reserveButton").attr("data-target", "#reserveTable");
+       
       });
 });
